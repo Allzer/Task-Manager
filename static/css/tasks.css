@@ -20,36 +20,49 @@
   color: #FFFFFF;
 }
 
-.add_form {
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  padding: 20px;
-
+/*Форма*/
+.form{
+  padding-top: 25%;
 }
 
-.add_form label {
-  display: block;
-  margin-bottom: 10px;
-}
+.for-form{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
-.add_form input[type="text"] {
+  overflow: hidden;
+  resize: none;
+  border-radius: 5px;
+  border-color: transparent;
   width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  outline: none;
+  font-size: 23px;
+  margin-bottom: 3%;
 }
 
-.add_form button {
-  background-color: rgba(44, 250, 34, 0.73);
-  color: #FFFFFF;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+
+
+
+/*Таблицы*/
+.table{
+  display: flex;
+  padding-top: 1%;
+}
+.all_tasks, .completed, .in_progress{
+  border-radius: 10px;
+  padding: 1%;
+  margin-left: 5%;
+  height: 710px;
+  width: 400px;
 }
 
-.add_form button:hover {
-  background-color: rgba(44, 250, 34, 0.73); /* Цвет при наведении */
+.in_progress{
+    background: rgba(250, 125, 0, 0.73);
+}
+
+
+.all_tasks{
+  background: #2EAFE5BA;
+}
+
+.completed{
+  background: lightgreen;
 }

@@ -10,19 +10,32 @@
 
 <body>
     {% block content %}
-    <div>
-        <button class="add" id="addButton" onclick="getform()">+</button>
-            <div class="add_form" id="addForm" style="display: none;">
-                <form role="form" action="/requestFine" method="POST" >
-                    <label>Название:</label>
-                    <input type="text" name="title">
-                    <label>Описание:</label>
-                    <input type="text" name="description">
-                    <label>Дата:</label>
-                    <input type="text" name="date">
-                    <button type="submit" class="btn btn-success">Отправить</button>
-                </form>
+
+
+    <div class="table">
+        <div class="all_tasks">
+            <div>
+                <button class="add" id="addButton">+</button>
+                    <div class="form" id="addtask" style="display: none;">
+                        <form>
+                            <input class="for-form" type="text" placeholder="Title" name="title" />
+                            <textarea class="for-form" id="myTextarea" placeholder="Description" name="description"></textarea>
+                            <input class="for-form" type="text" placeholder="Date" name="date">
+                            <input class="for-form" type="text" placeholder="Importance" name="importance">
+                        </form>
+                    </div>
             </div>
+        </div>
+
+        <div class="in_progress">
+
+        </div>
+
+        <div class="completed">
+
+        </div>
+
+
     </div>
     {% endblock %}
 

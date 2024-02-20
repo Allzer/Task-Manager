@@ -10,3 +10,4 @@ class Tasks(db.Model):
     description = db.Column(db.String(100), nullable=False)
     done = db.Column(db.Boolean, nullable=False)
     date = db.Column(db.DateTime, nullable=False)
+    importance = db.Column(db.Integer, nullable=False)
