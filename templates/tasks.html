@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+<head>
+    {% block title %}
+    <title>
+        {{title}}
+    </title>
+    {% endblock%}
+</head>
+
+<body>
+    {% block content %}
+    <div>
+        <button class="add" id="addButton" onclick="getform()">+</button>
+            <div class="add_form" id="addForm" style="display: none;">
+                <form role="form" action="/requestFine" method="POST" >
+                    <label>Название:</label>
+                    <input type="text" name="title">
+                    <label>Описание:</label>
+                    <input type="text" name="description">
+                    <label>Дата:</label>
+                    <input type="text" name="date">
+                    <button type="submit" class="btn btn-success">Отправить</button>
+                </form>
+            </div>
+    </div>
+    {% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}
+
+</body>

@@ -1,0 +1,55 @@
+.add {
+  background-color: #FFFFFF;
+  color: #2EAFE5BA;
+  border: none;
+  border-radius: 50%; /* Делаем кнопку круглой */
+  width: 60px; /* Задаем ширину и высоту кнопки */
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex; /* Размещаем иконку в центре кнопки */
+  justify-content: center;
+  align-items: center;
+  float: right;
+  transition: background-color 0.5s ease;
+  margin: 1%;
+}
+
+.add:hover {
+  background-color: rgba(44, 250, 34, 0.73); /* Цвет при наведении */
+  color: #FFFFFF;
+}
+
+.add_form {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+.add_form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.add_form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add_form button {
+  background-color: rgba(44, 250, 34, 0.73);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add_form button:hover {
+  background-color: rgba(44, 250, 34, 0.73); /* Цвет при наведении */
+}
