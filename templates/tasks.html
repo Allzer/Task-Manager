@@ -15,13 +15,19 @@
     <div class="table">
         <div class="all_tasks">
             <div>
+                <div class="show_post">
+                    {% for t in tasks %}
+                        <li class="task">{{t.title}} <input type="checkbox" class="task_checkbox" id="complete"></li>
+                    {% endfor %}
+                </div>
                 <button class="add" id="addButton">+</button>
                     <div class="form" id="addtask" style="display: none;">
-                        <form>
+                        <form method="post">
                             <input class="for-form" type="text" placeholder="Title" name="title" />
                             <textarea class="for-form" id="myTextarea" placeholder="Description" name="description"></textarea>
-                            <input class="for-form" type="text" placeholder="Date" name="date">
+                            <input class="for-form" type="date" placeholder="Date" name="date" id="dataToday">
                             <input class="for-form" type="text" placeholder="Importance" name="importance">
+                            <input class="for-form" type="submit">
                         </form>
                     </div>
             </div>
